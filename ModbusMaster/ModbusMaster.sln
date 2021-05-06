@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusMaster", "ModbusMaster.csproj", "{0CED47B0-6179-4EFF-9908-4B0CDD5C761E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus.Common", "..\Modbus.Common\Modbus.Common.csproj", "{2245CD7F-AE7A-49B1-81AD-10CBF7A573A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusLib", "..\ModbusLib\ModbusLib.csproj", "{981665E8-0693-4BC9-9969-CCB270D5B4B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CED47B0-6179-4EFF-9908-4B0CDD5C761E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CED47B0-6179-4EFF-9908-4B0CDD5C761E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CED47B0-6179-4EFF-9908-4B0CDD5C761E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CED47B0-6179-4EFF-9908-4B0CDD5C761E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2245CD7F-AE7A-49B1-81AD-10CBF7A573A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2245CD7F-AE7A-49B1-81AD-10CBF7A573A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2245CD7F-AE7A-49B1-81AD-10CBF7A573A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2245CD7F-AE7A-49B1-81AD-10CBF7A573A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981665E8-0693-4BC9-9969-CCB270D5B4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981665E8-0693-4BC9-9969-CCB270D5B4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981665E8-0693-4BC9-9969-CCB270D5B4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981665E8-0693-4BC9-9969-CCB270D5B4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73360127-B0A2-4EE2-8F32-CEA871764D62}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Farrellton Solar\Modbus Master\ModbusLib.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{981665E8-0693-4BC9-9969-CCB270D5B4B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ModbusLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>ModbusLib</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="System\Runtime\CompilerServices\ExtensionAttribute.cs" />
+    <Compile Include="ICommServer.cs" />
+    <Compile Include="IpServer.cs" />
+    <Compile Include="ICommClient.cs" />
+    <Compile Include="ICommClientAsync.cs" />
+    <Compile Include="IByteArray.cs" />
+    <Compile Include="SerialPortClient.cs" />
+    <Compile Include="SerialPortExtensions.cs" />
+    <Compile Include="ByteArrayHelpers.cs" />
+    <Compile Include="CommDataBase.cs" />
+    <Compile Include="ClientCommData.cs" />
+    <Compile Include="ServerCommData.cs" />
+    <Compile Include="SerialPortServer.cs" />
+    <Compile Include="SocketExtensions.cs" />
+    <Compile Include="CommResponse.cs" />
+    <Compile Include="UdpServer.cs" />
+    <Compile Include="TcpServer.cs" />
+    <Compile Include="ServeCommandHandler.cs" />
+    <Compile Include="ServeCommandEventArgs.cs" />
+    <Compile Include="ByteArrayReader.cs" />
+    <Compile Include="IpClient.cs" />
+    <Compile Include="ByteArrayWriter.cs" />
+    <Compile Include="Protocols\ModbusCodecBase.cs" />
+    <Compile Include="Protocols\IProtocolCodec.cs" />
+    <Compile Include="Protocols\ModbusRtuCodec.cs" />
+    <Compile Include="Protocols\ModbusCommandCodec.cs" />
+    <Compile Include="Protocols\ModbusCodecWriteMultipleRegisters.cs" />
+    <Compile Include="Protocols\ModbusCommand.cs" />
+    <Compile Include="Protocols\IProtocol.cs" />
+    <Compile Include="Protocols\ModbusClient.cs" />
+    <Compile Include="Protocols\ModbusCodecWriteSingleDiscrete.cs" />
+    <Compile Include="Protocols\ModbusTcpCodec.cs" />
+    <Compile Include="Protocols\ModbusServer.cs" />
+    <Compile Include="Protocols\ModbusCodecWriteSingleRegister.cs" />
+    <Compile Include="Protocols\ModbusCodecForceMultipleCoils.cs" />
+    <Compile Include="Protocols\ModbusCodecReadMultipleDiscretes.cs" />
+    <Compile Include="Protocols\ModbusCodecReadMultipleRegisters.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
